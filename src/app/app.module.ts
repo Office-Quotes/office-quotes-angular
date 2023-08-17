@@ -8,12 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SeasonsDropdownComponent } from './seasons-dropdown/seasons-dropdown.component';
 import { EpisodeDropdownComponent } from './episode-dropdown/episode-dropdown.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { RandomQuoteComponent } from './random-quote/random-quote.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     SeasonsDropdownComponent,
     EpisodeDropdownComponent,
-    NavBarComponent
+    NavBarComponent,
+    RandomQuoteComponent,
   ],
   imports: [
     BrowserModule,
