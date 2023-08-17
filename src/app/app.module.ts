@@ -9,6 +9,7 @@ import { SeasonsDropdownComponent } from './seasons-dropdown/seasons-dropdown.co
 import { EpisodeDropdownComponent } from './episode-dropdown/episode-dropdown.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RandomQuoteComponent } from './random-quote/random-quote.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RandomQuoteComponent } from './random-quote/random-quote.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
