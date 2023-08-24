@@ -32,7 +32,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatSelectModule,
     NgFor,
     MatInputModule,
-    FormsModule,,
+    FormsModule,
     HttpClientModule,
   ],
   providers: [],

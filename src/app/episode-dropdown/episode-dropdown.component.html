@@ -1,1 +1,9 @@
-<p>episode-dropdown works!</p>
+<mat-form-field>
+    <mat-label>Episode List</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let status of statusList" [value]="status">
+        {{status}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  
