@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,12 +12,17 @@ import {MatInputModule} from '@angular/material/input';
 import {NgFor} from '@angular/common';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { RandomQuoteComponent } from './random-quote/random-quote.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     SeasonsDropdownComponent,
-    EpisodeDropdownComponent
+    EpisodeDropdownComponent,
+    NavBarComponent,
+    RandomQuoteComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatSelectModule,
     NgFor,
     MatInputModule,
-    FormsModule,
+    FormsModule,,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
