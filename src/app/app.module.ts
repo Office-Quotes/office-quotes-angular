@@ -15,6 +15,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RandomQuoteComponent } from './random-quote/random-quote.component';
 import {HttpClientModule} from '@angular/common/http';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatSelectModule,
     NgFor,
     MatInputModule,
+    MatCardModule,
     FormsModule,
     HttpClientModule,
   ],
