@@ -1,1 +1,9 @@
-<p>seasons-dropdown works!</p>
+<mat-form-field>
+  <mat-label>Seasons</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let status of statusList" [value]="status">
+      {{status}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
