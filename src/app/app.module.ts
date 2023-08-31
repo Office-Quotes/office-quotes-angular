@@ -17,6 +17,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RandomQuoteComponent } from './random-quote/random-quote.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
+import { OfficeApiService } from './api-service/office-api.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import {MatCardModule} from '@angular/material/card';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [OfficeApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,10 +8,10 @@ import {HttpClient} from '@angular/common/http';
 export class OfficeApiService {
 
   constructor(
-    private http:HttpClient
+    public http:HttpClient
   ) { }
 
-  apiCall(){
+  getOfficeQuote(){
     return this.http.get('https://officeapi.akashrajpurohit.com/quote/random');
   }
 }
