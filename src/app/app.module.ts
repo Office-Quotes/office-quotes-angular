@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SeasonsDropdownComponent } from './seasons-dropdown/seasons-dropdown.component';
 import { EpisodeDropdownComponent } from './episode-dropdown/episode-dropdown.component';
+import { EpisodeInfoComponent } from './episode-info/episode-info.component';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {NgFor} from '@angular/common';
@@ -24,6 +25,7 @@ import {MatCardModule} from '@angular/material/card';
     EpisodeDropdownComponent,
     NavBarComponent,
     RandomQuoteComponent,
+    EpisodeInfoComponent,
   ],
   imports: [
     BrowserModule,
