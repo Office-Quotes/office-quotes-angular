@@ -4,7 +4,7 @@ import { MatInputModule } from '@angular/material/input';
 import { NgFor } from '@angular/common';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { OfficeApiService } from '../office-api.service';
+import { OfficeApiService } from '../api-service/office-api.service';
 
 
 @Component({
