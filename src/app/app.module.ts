@@ -9,7 +9,7 @@ import { SeasonsDropdownComponent } from './seasons-dropdown/seasons-dropdown.co
 import { EpisodeDropdownComponent } from './episode-dropdown/episode-dropdown.component';
 import { EpisodeInfoComponent } from './episode-info/episode-info.component';
 import {FormsModule} from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
+import {MatInputModule} from '@angular/material/input'
 import {NgFor} from '@angular/common';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
