@@ -1,0 +1,9 @@
+<div>
+    <label for="seasonSelector">Select a season:</label>
+    <select id="seasonSelector" [(ngModel)]="seasonNumber" (change)="onSeasonChange()">
+        <option *ngFor="let season of [1,2,3,4,5,6,7,8,9]" [value]="season">{{season}}</option>
+    </select>
+</div>
+<div *ngIf="seasonData">
+    <pre>{{seasonData | json}}</pre>
+</div>

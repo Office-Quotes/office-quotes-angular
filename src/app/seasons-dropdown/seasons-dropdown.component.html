@@ -1,9 +1,15 @@
 <mat-form-field>
   <mat-label>Seasons</mat-label>
-  <mat-select>
-    <mat-option *ngFor="let status of statusList" [value]="status">
-      {{status}}
+  <mat-select [(ngModel)]="selectedSeason" (selectionChange)="onSeasonChange()">
+    <mat-option *ngFor="let season of seasons" [value]="season">
+      {{season}}
     </mat-option>
   </mat-select>
+  <div *ngIf="seasonData">
+    <h2>Season {{selectedSeason}} Information</h2>
+    <ul>
+        <strong>Number of Episodes:</strong> {{seasonData.length}}
+    </ul>
+  </div>
 </mat-form-field>
 
