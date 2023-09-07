@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Router, RouterModule, Routes } from '@angular/router';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,7 +19,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { OfficeApiService } from './api-service/office-api.service';
 import { ErrorComponent } from './error/error.component';
-
+import {MatTabsModule} from '@angular/material/tabs';
 
 const appRoutes: Routes = [
     { path: '', component:AppComponent }, //localhost:4200/
@@ -36,7 +35,6 @@ const appRoutes: Routes = [
     SeasonsDropdownComponent,
     EpisodeDropdownComponent,
     NavBarComponent,
-    RandomQuoteComponent,
     EpisodeInfoComponent,
     ErrorComponent,
   ],
@@ -49,6 +47,7 @@ const appRoutes: Routes = [
     NgFor,
     MatInputModule,
     MatCardModule,
+    MatTabsModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),

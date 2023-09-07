@@ -2,9 +2,11 @@
     <div class="row">
         <div class="col-md-3">
             <ul class="nav flex-column">
-                <li class="nav-item"><a routerLink="/">Home</a></li>
-                <li class="nav-item"><a [routerLink]="['/random-quotes']">Random Quotes</a></li>
-                <li class="nav-item"><a [routerLink]="['/episode-info']">Episode Info</a></li>
+                <mat-tab-group> 
+                    <mat-tab label="Home" routerLink="/"></mat-tab>
+                    <mat-tab label="Random Quotes" routerLink="/random-quotes"></mat-tab>
+                    <mat-tab label="Episode Info" routerLink="/episode-info"></mat-tab>
+                </mat-tab-group>
             </ul>
         </div>
         <div class="col-md-9">

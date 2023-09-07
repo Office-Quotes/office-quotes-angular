@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormsModule} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-
+import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import {NgFor} from '@angular/common';
 import {MatSelectModule} from '@angular/material/select';

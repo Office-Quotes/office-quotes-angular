@@ -1,15 +1,23 @@
-<mat-card class="inline-block">
-  <mat-card-content></mat-card-content>
-</mat-card>
+<!-- This is the HTML template for the RandomQuoteComponent. -->
+import { MatTabsModule } from '@angular/material/tabs';
+
 <mat-card class="inline-block">
   <mat-card-header>
+    <mat-tab-group>
+      <mat-tab label="First"> Content 1 </mat-tab>
+      <mat-tab label="Second"> Content 2 </mat-tab>
+      <mat-tab label="Third"> Content 3 </mat-tab>
+    </mat-tab-group>
     <mat-card-title>The Office</mat-card-title>
     <mat-card-subtitle>Random Quote</mat-card-subtitle>
   </mat-card-header>
+  </mat-card>
+  <div>
+  <mat-card>
   <img mat-card-image src="https://www.smithstreetbooks.com/wp-content/uploads/2019/05/IDM_NEW-TRADE-CVR_PRESS.jpg" alt="Photo of an illustration that reads 'inside dunder mifflin: the ultimate fan's guide to The Office'">
   <mat-card-content>
-    <p>"{{quote.quote}}"</p>
-  <p>-{{quote.character}}</p>
+    <p><strong>Quote:</strong> "{{quote.quote}}"</p>
+    <p><strong>Character:</strong> {{quote.character}}</p>
   </mat-card-content>
   <mat-card-actions>
     <button mat-button class="btn btn-primary" onclick="window.location.reload()">
@@ -17,3 +25,4 @@
     </button>
   </mat-card-actions>
 </mat-card>
+</div>

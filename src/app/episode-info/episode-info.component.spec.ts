@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import {MatTabGroup} from '@angular/material/tabs';
 import { EpisodeInfoComponent } from './episode-info.component';
 
 describe('EpisodeInfoComponent', () => {
