@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Router, RouterModule, Routes } from '@angular/router';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,16 @@ import { RandomQuoteComponent } from './random-quote/random-quote.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { OfficeApiService } from './api-service/office-api.service';
+import { ErrorComponent } from './error/error.component';
+
+
+const appRoutes: Routes = [
+    { path: '', component:AppComponent }, //localhost:4200/
+    { path: 'random-quotes', component:RandomQuoteComponent },
+    { path: 'episode-info', component:EpisodeInfoComponent },
+    { path: 'episode-dropdown', component:EpisodeDropdownComponent},
+    { path: '**', component:ErrorComponent },
+]
 
 @NgModule({
   declarations: [
@@ -27,6 +38,7 @@ import { OfficeApiService } from './api-service/office-api.service';
     NavBarComponent,
     RandomQuoteComponent,
     EpisodeInfoComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +51,7 @@ import { OfficeApiService } from './api-service/office-api.service';
     MatCardModule,
     FormsModule,
     HttpClientModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [OfficeApiService],
   bootstrap: [AppComponent]
