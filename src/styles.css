@@ -1,49 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
-
-
-html, body {
-    .div {
-        height: 100%;
-        width: 100%;
-        margin: auto;
-        display: inline-block;
-        vertical-align: inline-block;
-        padding-left: 20%;
-        padding-right: 20%;
-        margin-top: 50%;
-        background-color: #dfe9e2;
-        position: absolute;
-        border: 10px solid black;
-        align-items: normal;
-        font-family: Roboto, "Helvetica Neue", sans-serif;
-    }
-    .navbar {
-        display: inline-block;
-        vertical-align: inline-block;
-        padding-left: 20%;
-        padding-right: 20%;
-        margin-top: 50%;
-        padding-top: 20%;
-        position:static;
-        border: 10px solid black;
-        align-content: center;
-    }
-    .container {
-        margin: auto;
-        height: 100%;
-        width: 100%;
-        display: -moz-inline-stack;
-        padding-left: 30%;
-        vertical-align: center;
-        align-content: center;
-        background-color: white;
-        border: 1px solid black; 
-        }
-    .row {
-        margin: auto;
-        display:-moz-inline-stack;
-        align-content: center;
-        background-color: white;
-        border: 1px solid black; 
-}
-}
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
