@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+    margin:30px 0px;
+}
+
+.img{
+    width: 200px;
+    height:300px;
+    border-radius: 8px;
+}
+
+.img_background{
+    position: absolute;
+    background: url("https://media.tenor.com/bUOrNPAXcMEAAAAd/the-office-michael-scott.gif");
+    background-size: 150px;
+    width: 300px;
+    height: 300px;
+    border:2px solid;
+}
