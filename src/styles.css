@@ -1,9 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
-    .inline-block {
+
+html, body {
+        height: viewport-length; 
+        width: viewport-width;
+        margin: auto;
         display: inline-block;
-        width: 50%;
-    }
-    background-color: #f5f5f5;}
+        vertical-align: text-top;
+        background-color: #dfe9e2;
+        position: static;
+        border: 10px solid black;
+        align-items: normal;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+}
