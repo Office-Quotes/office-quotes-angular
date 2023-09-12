@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>OfficeQuotesAngular</title>
-  <base href="/">
+  <base href="/"></base>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+<body>
   <app-root></app-root>
   <mat-card class="Quote">
     <mat-card-header>
@@ -19,20 +20,23 @@
         </mat-card-title>
       </div>
       <mat-card-subtitle><mat-nav-list><ul>
-        <li> <a class= "navbar-brand" [routerLink]="['/app.nav-bar']">Home</a></li>
-        <li>Seasons</li>
-        <li>Episodes</li>
+        <li> <a href= "Home">Home</a></li>
+        <li><a href= "src/app/random-quote/random-quote.component.ts">Random Quotes</a></li>
+        <li><a href="src/app/episode-info/episode-info.component.ts">Episodes</a></li>
         </ul></mat-nav-list></mat-card-subtitle>
     </mat-card-header>
   
     <img mat-card-image src="https://www.smithstreetbooks.com/wp-content/uploads/2019/05/IDM_NEW-TRADE-CVR_PRESS.jpg" alt="Photo of an illustration that reads 'inside dunder mifflin: the ultimate fan's guide to The Office'">
     <mat-card-content>
+      <h2>Daily Dose of Sarcasm</h2>
+      <p>Click the button below to generate a random quote from The Office.</p>
+      <p>Quotes are generated from the <a href="https://www.officeapi.dev/">Office API</a>.</p>
       <div class= "quote">
-      <p><strong>Quote:</strong>
-        {{quote.quote}} Random Quote</p>
-      <p><strong>Character:</strong>
-        {{quote.character}} </p>
-    </div></mat-card-content>
+      <p><strong>Quote:</strong> RandomQuoteComponent{{Quote.quote}} </p>
+      <p class="character" *ngIf="Quote.character">
+        <strong>Character:</strong> {{Quote.character}} </p>
+    </div>
+  </mat-card-content>
 
     <mat-card-actions>
       <button mat-button class="btn btn-primary" onclick="window.location.reload()">

@@ -9,7 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-nav-bar',
-  templateUrl: '../app.component.html',
-  styleUrls: ['../app.component.css']
+  templateUrl: '../random-quote/random-quote.component.html',
+  styleUrls: ['../random-quote/random-quote.component.css']
 })
 export class NavBarComponent { }

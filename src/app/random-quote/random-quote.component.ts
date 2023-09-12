@@ -9,24 +9,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from '../app.component';
 import {MatCommonModule} from '@angular/material/core';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
-  selector: 'app-random-quote',
+  selector: 'quote.class.ts',
   templateUrl: './random-quote.component.html',
   styleUrls: ['./random-quote.component.css'],
   standalone: true,
-  imports: [MatButtonModule, MatTabsModule, MatCardModule]
+  imports: [RouterModule,HttpClientModule, MatCardModule]
 })
 export class RandomQuoteComponent {
   public quote = new Quote("", "");
   
   constructor(public officeApiService: OfficeApiService){}
 
-  ngOnInit() {
-    this.newOfficeQuote();
-  }
-    newOfficeQuote() {
+    ngOnInit() {
+    this.newOfficeQuote(this.quote.quote, this.quote.character);
+    }
+
+    newOfficeQuote(quote:string,character:string) {
       this.officeApiService.getOfficeQuote().subscribe((quote: any) => {
         this.quote = new Quote(quote.quote, quote.character)
       }),
