@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Router, RouterModule, Routes } from '@angular/router';
-
+import { Quote } from './api-service/quote.class';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,10 +20,11 @@ import {MatCardModule} from '@angular/material/card';
 import { OfficeApiService } from './api-service/office-api.service';
 import { ErrorComponent } from './error/error.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { MatCommonModule } from '@angular/material/core';
 
 const appRoutes: Routes = [
     { path: '', component:AppComponent }, //localhost:4200/
-    { path: 'random-quotes', component:RandomQuoteComponent },
+    { path: 'random-quote', component:RandomQuoteComponent },
     { path: 'episode-info', component:EpisodeInfoComponent },
     { path: 'episode-dropdown', component:EpisodeDropdownComponent},
     { path: '**', component:ErrorComponent },
@@ -32,22 +33,23 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    NavBarComponent,
     SeasonsDropdownComponent,
     EpisodeDropdownComponent,
-    NavBarComponent,
     EpisodeInfoComponent,
     ErrorComponent,
   ],
   imports: [
     BrowserModule,
+    RandomQuoteComponent,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatCommonModule,
     NgFor,
     MatInputModule,
     MatCardModule,
-    MatTabsModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),

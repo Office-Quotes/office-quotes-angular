@@ -1,8 +1,5 @@
 .mat-card {
+    display:inline block;
+    background-color: #ffffff;
     max-width: 400px;
-}
-
-.example-header-image {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Dunder_Mifflin%2C_Inc.svg/1920px-Dunder_Mifflin%2C_Inc.svg.png');
-    background-size: cover;
 }

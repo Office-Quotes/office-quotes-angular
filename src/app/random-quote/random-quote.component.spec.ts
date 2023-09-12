@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { Quote } from '../api-service/quote.class';
 import { RandomQuoteComponent } from './random-quote.component';
 
 describe('RandomQuoteComponent', () => {

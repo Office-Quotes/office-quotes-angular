@@ -7,5 +7,7 @@ import {OfficeApiService} from './api-service/office-api.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'office-quotes-angular';  
+  NavBarComponent: any;
+  title = 'office-quotes';
+  constructor(public officeApiService: OfficeApiService){}  
 }

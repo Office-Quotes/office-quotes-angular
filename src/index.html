@@ -10,7 +10,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body class="mat-typography">
   <app-root></app-root>
+  <mat-card class="Quote">
+    <mat-card-header>
+      <div>
+        <mat-card-title>
+          <h1><a class="navbar-brand" href="#">OfficeQuotesAngular</a></h1>
+        </mat-card-title>
+      </div>
+      <mat-card-subtitle><mat-nav-list><ul>
+        <li> <a class= "navbar-brand" [routerLink]="['/app.nav-bar']">Home</a></li>
+        <li>Seasons</li>
+        <li>Episodes</li>
+        </ul></mat-nav-list></mat-card-subtitle>
+    </mat-card-header>
+  
+    <img mat-card-image src="https://www.smithstreetbooks.com/wp-content/uploads/2019/05/IDM_NEW-TRADE-CVR_PRESS.jpg" alt="Photo of an illustration that reads 'inside dunder mifflin: the ultimate fan's guide to The Office'">
+    <mat-card-content>
+      <div class= "quote">
+      <p><strong>Quote:</strong>
+        {{quote.quote}} Random Quote</p>
+      <p><strong>Character:</strong>
+        {{quote.character}} </p>
+    </div></mat-card-content>
+
+    <mat-card-actions>
+      <button mat-button class="btn btn-primary" onclick="window.location.reload()">
+        GENERATE NEW QUOTE
+      </button>
+    </mat-card-actions>
+  </mat-card>
 </body>
 </html>
