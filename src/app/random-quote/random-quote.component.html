@@ -1,9 +1,14 @@
 <mat-card class="container-fluid">
     <mat-card-content></mat-card-content>
-    <p>"{{quote.quote}}"</p>
-    <p>-{{quote.character}}</p>
-    <button type="button" class="btn btn-primary" onclick="window.location.reload()">
+    <img mat-card-image class="img" src="https://www.smithstreetbooks.com/wp-content/uploads/2019/05/IDM_NEW-TRADE-CVR_PRESS.jpg" alt="Photo of an illustration that reads 'inside dunder mifflin: the ultimate fan's guide to The Office'">
+
+    <h2 class="text-center">Daily Dose of Sarcasm</h2>
+    <blockquote>"{{quote.quote}}"</blockquote>
+    <blockquote>-{{quote.character}}</blockquote>
+    <mat-card-actions>
+    <button mat-raised-button class="button_bs" color="primary" type="mat-button" class="btn btn-primary" onclick="window.location.reload()">
       Generate New Quote
     </button>
+  </mat-card-actions>
   </mat-card>
   
