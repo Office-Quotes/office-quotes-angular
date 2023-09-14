@@ -20,6 +20,12 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { OfficeApiService } from './api-service/office-api.service';
 import { ErrorComponent } from './error/error.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatMenuModule} from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 const appRoutes: Routes = [
@@ -27,6 +33,7 @@ const appRoutes: Routes = [
     { path: 'random-quotes', component:RandomQuoteComponent },
     { path: 'episode-info', component:EpisodeInfoComponent },
     { path: 'episode-dropdown', component:EpisodeDropdownComponent},
+    { path: 'season-dropdown', component:SeasonsDropdownComponent},
     { path: '**', component:ErrorComponent },
 ]
 
@@ -48,7 +55,12 @@ const appRoutes: Routes = [
     MatSelectModule,
     NgFor,
     MatInputModule,
+    MatIconModule,
+    MatButtonModule,
     MatCardModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatToolbarModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
